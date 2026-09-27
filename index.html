@@ -1,0 +1,155 @@
+<title>ココ ショコ プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#FBF6F4; --card:#FFFFFF; --soft:#F5EDEB; --ink:#4A3F42; --sub:#7E7174; --line:#EADFDC;
+  --accent:#5E9E7E; --accent-soft:#E7F2EB;
+  --round:"Hiragino Maru Gothic ProN","Zen Maru Gothic","Hiragino Sans",sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark;
+    --bg:#1E1A1C; --card:#2A2527; --soft:#362F32; --ink:#F2EAEC; --sub:#B5A8AB; --line:#3E3639;
+    --accent:#88C4A4; --accent-soft:#27352E; }
+}
+:root[data-theme="dark"]{ color-scheme:dark;
+  --bg:#1E1A1C; --card:#2A2527; --soft:#362F32; --ink:#F2EAEC; --sub:#B5A8AB; --line:#3E3639;
+  --accent:#88C4A4; --accent-soft:#27352E; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.85;padding-inline:16px;padding-block:32px 64px}
+.wrap{max-width:680px;margin:0 auto}
+header{display:flex;flex-direction:column;gap:6px;margin-bottom:28px}
+.app{font-family:var(--round);font-weight:700;color:var(--accent);font-size:14px;letter-spacing:.06em}
+h1{font-family:var(--round);font-weight:700;font-size:26px;line-height:1.45;margin:0;text-wrap:balance}
+.meta{color:var(--sub);font-size:13px;margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+nav a{font-size:13px;color:var(--accent);text-decoration:none;background:var(--accent-soft);padding:6px 12px;border-radius:999px}
+nav a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lead{background:var(--accent-soft);border-radius:18px;padding:18px 20px;margin-bottom:28px}
+.lead p{margin:0}
+section{background:var(--card);border-radius:18px;padding:22px 22px 18px;margin-bottom:14px}
+h2{font-family:var(--round);font-weight:700;font-size:18px;line-height:1.5;margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
+h2 .n{color:var(--accent);font-variant-numeric:tabular-nums;font-size:15px}
+h3{font-size:15px;margin:16px 0 6px}
+p{margin:0 0 10px}
+ul{margin:0 0 10px;padding-left:1.2em}
+li{margin:2px 0}
+a{color:var(--accent)}
+.note{color:var(--sub);font-size:13px}
+.support-title{font-family:var(--round);font-weight:700;font-size:22px;margin:40px 0 14px}
+.mail{display:inline-block;font-weight:600;background:var(--soft);padding:8px 14px;border-radius:12px;user-select:all;word-break:break-all}
+dl{margin:0}
+dt{font-weight:600;margin-top:12px}
+dd{margin:4px 0 0}
+footer{margin-top:36px;color:var(--sub);font-size:12px;text-align:center}
+@media (max-width:420px){ h1{font-size:22px} section{padding:18px 16px 14px} }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="app">ココ ショコ</div>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">制定日：2026年9月27日</p>
+    <nav aria-label="ページ内の移動">
+      <a href="#privacy">プライバシーポリシー</a>
+      <a href="#support">サポート・お問い合わせ</a>
+    </nav>
+  </header>
+
+  <div class="lead" id="privacy">
+    <p>iPhone アプリ「ココ ショコ」（以下「本アプリ」）で記録した内容は、利用者の iPhone の中だけに保存します。開発者が記録を受け取ったり、見たりすることはありません。このページでは、本アプリが扱う情報と、外部に送る場合の内容をまとめています。</p>
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>本アプリが扱う情報</h2>
+    <p>本アプリでは、利用者が入力した次の情報を扱います。</p>
+    <ul>
+      <li>気分、体力、眠り、お風呂の記録</li>
+      <li>声や文字で残した言葉（メモ）</li>
+      <li>お薬の記録（薬の名前、量、飲み方、処方された日、メモ）</li>
+      <li>通院の情報（次の通院日、クリニックの名前、電話番号）</li>
+      <li>お薬の読み取りのために撮影・選択した写真</li>
+    </ul>
+    <p>これらは利用者の iPhone の中にのみ保存し、開発者のサーバーには送りません。開発者はサーバーを持っておらず、記録を収集していません。写真は読み取りに使うだけで、本アプリには保存しません。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>外部に送る情報</h2>
+    <h3>AI 機能（利用者が同意した場合のみ）</h3>
+    <p>AI の返事、声のメモの聞き違いの修正、お薬の読み取り、受診用レポートの要約に、Anthropic, PBC の AI サービス「Claude」を使います。初回起動時の画面、または設定の「プライバシーとデータの扱い」で利用者が同意した場合に限り、次の内容を Anthropic に送信します。</p>
+    <ul>
+      <li>その日と最近の、気分・体力・眠り・お風呂の記録</li>
+      <li>残した言葉（メモ）の文章</li>
+      <li>お薬の読み取りに使う、処方箋や薬の説明書の写真と文章</li>
+    </ul>
+    <p>名前、電話番号、通院先の情報は送りません。送信した内容は、返事や読み取り結果を作るためだけに使われます。Anthropic での取り扱いは、<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic のプライバシーポリシー</a>に従います。</p>
+    <p>AI 機能に同意しなくても、そのほかの機能はすべて使えます。</p>
+
+    <h3>声のメモ（音声認識）</h3>
+    <p>話した言葉を文字にするため、音声を Apple Inc. の音声認識に送信します。文字にしたあと、音声は本アプリには保存しません。Apple での取り扱いは、<a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">Apple のプライバシーポリシー</a>に従います。</p>
+
+    <h3>利用者の操作による共有</h3>
+    <p>受診用レポートは、利用者が「送る・印刷」を選んだときだけ、利用者が選んだ方法（メール、印刷など）で共有されます。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>使っていないもの</h2>
+    <ul>
+      <li>広告</li>
+      <li>利用状況の解析、行動の追跡（トラッキング）</li>
+      <li>アカウントの登録</li>
+      <li>ほかの人との記録の共有や、誰かへの自動の通知</li>
+    </ul>
+    <p>通院日のお知らせは、iPhone の中の通知機能だけを使い、外部には送りません。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>API キーの保管</h2>
+    <p>AI 機能に使う API キーは、iPhone のキーチェーン（安全な保管場所）に、その端末だけで使える形で保存します。開発者に送られることはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>同意の取り消しと記録の削除</h2>
+    <ul>
+      <li>AI 機能への同意は、設定の「プライバシーとデータの扱い」からいつでも取り消せます。取り消したあとは、Anthropic には何も送りません。</li>
+      <li>残した言葉やお薬の記録は、アプリの中で1件ずつ削除できます。</li>
+      <li>本アプリを削除すると、iPhone の中の記録はすべて削除されます。</li>
+    </ul>
+    <p class="note">iPhone のバックアップ（iCloud またはパソコン）を有効にしている場合、記録が端末のバックアップに含まれることがあります。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>医療上の助言ではありません</h2>
+    <p>本アプリのコメントや AI の返事は、気持ちを整えるためのお手伝いです。診断や治療の代わりにはなりません。お薬の量や飲み方は、必ず主治医や薬剤師の指示にしたがってください。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>このポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、このページでお知らせします。</p>
+  </section>
+
+  <h2 class="support-title" id="support">サポート・お問い合わせ</h2>
+
+  <section>
+    <h2>お問い合わせ先</h2>
+    <p>本アプリや、このポリシーについてのお問い合わせは、次のメールアドレスまでお願いします。</p>
+    <p><span class="mail" id="contact-mail">makky015@yahoo.co.jp</span></p>
+    <p class="note">お返事までに数日いただくことがあります。</p>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+    <dl>
+      <dt>記録を消さずにアプリを新しくするには？</dt>
+      <dd>アップデートでは記録はそのまま残ります。アプリを削除すると記録も消えてしまうので、削除はしないでください。</dd>
+      <dt>AI を使うのをやめたいときは？</dt>
+      <dd>「振り返り」タブ右上の歯車 →「プライバシーとデータの扱い」→「AI の利用をやめる」を押してください。</dd>
+      <dt>声のメモがうまく文字にならないときは？</dt>
+      <dd>静かな場所で、iPhone に近づいて話してみてください。文字になったあとも、残した言葉をタップすると書き直せます。</dd>
+    </dl>
+  </section>
+
+  <footer>© 2026 ココ ショコ</footer>
+</div>
